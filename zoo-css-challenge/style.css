@@ -29,9 +29,9 @@ section {
   background-color: #f8f0fb;
 }
 
-img {
+/* img {
   border: 5px solid #8075ff;
-}
+} */
 
 h1,
 h2,
@@ -77,6 +77,9 @@ footer {
 
 .introduction {
 }
+.introduction p {
+  line-height: 30px;
+}
 
 #badge {
   height: 120px;
@@ -85,7 +88,7 @@ footer {
   border-radius: 50%;
   display: inline-block;
   position: fixed;
-  bottom: 20px;
+  top: 20px;
   right: 20px;
 
   display: flex;
@@ -95,7 +98,7 @@ footer {
 }
 
 #badge:hover {
-  background-color: yellow;
+  background-color: rgb(175, 175, 98);
 }
 
 #badge p {
@@ -105,25 +108,46 @@ footer {
 
 .image-container img {
   vertical-align: top;
-  border: 5px solid #747c92;
+  /* border: 5px solid #747c92; */
 }
 
 .image-container img:first-of-type {
-  vertical-align: bottom;
+  /* vertical-align: bottom; */
+  border: 5px solid #747c92;
+}
+
+.image-container img:nth-of-type(2) {
+  border: 5px solid #cf1235;
+}
+.image-container img:last-of-type {
+  border: 5px solid #3512cf;
 }
 
 .tigers {
   background-color: #0b3c49;
   color: #f0e100;
 }
+.tigers h2 {
+  color: #0000ff;
+}
 
 .giraffe {
-  background-color: #465775;
+  background-color: #483c46;
   color: #56e39f;
 }
 
-.giraffe h2 {
-  color: #ef6f6c;
+.giraffe h2,
+h3 {
+  color: #f4743b;
+}
+.giraffe p {
+  color: #beee62;
+}
+.giraffe :nth-child(2) {
+  font-size: 20px;
+}
+.news h2 {
+  text-align: center;
 }
 
 .card {
@@ -166,11 +190,19 @@ footer {
   background-color: rgba(255, 255, 255, 0.75);
   padding: 50px;
   max-width: 400px;
+  border-radius: 6px;
 }
 
 .education-container h3,
 .education-container p {
   margin-bottom: 1em;
+}
+.education-container button {
+  font-size: large;
+}
+.education-container button:hover,
+.education-container button:focus {
+  background-color: #554397;
 }
 
 /*Membership*/
@@ -183,6 +215,10 @@ footer {
 .membership h2 {
   color: #ff3f00;
 }
+.membership p {
+  max-width: 700px;
+  margin: 15px auto;
+}
 
 .membership strong {
   color: #ff7f11;
@@ -191,5 +227,5 @@ footer {
 /*Programs*/
 
 .programs .card {
-  display: block;
+  display: inline-block;
 }
